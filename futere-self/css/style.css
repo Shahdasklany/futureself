@@ -1,0 +1,202 @@
+/*  General  */
+
+* {
+    /*makes sizing elements easier to control*/
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    /*vh-- viewport height  so 100vh = our website to fill the screen*/
+    min-height: 100vh;
+
+    background-color: #F5EFE6;
+    color: #3E342C ;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+}
+
+/* container  */
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    background-color: #FFFDF9;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(62, 52, 44, 0.12);
+}
+
+/*  header  */
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header h1, 
+.header h2 {
+
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/*  content  */
+
+.content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content a,
+.footer a {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    margin-top: 20px;
+
+    background-color: #A66A5B;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.content a:hover,
+.footer a:hover {
+    background-color: #875247;
+    /* moves it slightly upward. */
+    transform: translateY(-2px);
+}
+
+/*  form  */
+
+.content label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 18px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+.content input,
+.content textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #D6C8B8;
+    border-radius: 8px;
+
+    background-color: #FFFCF7;
+
+    color:#3E342C;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.content input:focus,
+.content textarea:focus {
+
+    border-color: #A66A5B;
+
+}
+
+.content textarea {
+    min-height: 200px;
+
+    resize: vertical;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.6;
+
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer h2 {
+
+    margin-bottom: 15px;
+
+}
+
+.footer ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footer li {
+    font-weight: bold;
+}
+
+/*  CAPSULE  */
+
+.content output {
+
+    font-weight: bold;
+    color:  #A66A5B;
+}
+
+.content h1 {
+    margin: 15px 0;
+}
+
+/* responsive design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
